@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/그림2.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+    	.loginForm {
+    		text-align: center;
+    		height : 500px;
+    	}
+    	.login_id {
+    		margin-top: 80px;
+    		margin-bottom: 50px;
+    	}
+    	.login_pw{
+    		margin-bottom : 50px;
+    	}
+    </style>
+<title>북애 로그인</title>
+</head>
+<body>
+	<!--#wrapper 시작-->
+    <div id="wrapper">
+        <!--헤더 시작-->
+        <header>
+            <div class="head">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="BookAe 로고">
+                    </a>
+                </h1>
+                <ul class="infoLink">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+                <div class="test">
+                    <div class="search">
+                        <h2 class="hidden">도서 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <input type="text" id="bookSearch" name="bookSearch" placeholder="도서 검색" required>
+                            <button type="submit">검색</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <h2 class="hidden">메인 메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">베스트 셀러</a>
+                        <ul class="bestSeller">
+                            <li><a href="#">전체 베스트셀러</a></li>
+                            <li><a href="#">교보 베스트셀러</a></li>
+                            <li><a href="#">Yes24 베스트셀러</a></li>
+                            <li><a href="#">알라딘 베스트셀러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">소식 구경</a>
+                        <ul class="infomation">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">매거진</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">북애의 서재</a>
+                        <ul class="recommend">
+                            <li><a href="#">북애 추천</a></li>
+                            <li><a href="#">셀럽 추천</a></li>
+                            <li class="white">.</li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="community">
+                            <li><a href="community.html">감상평</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">추천게시판</a></li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--헤더 종료-->
+        
+		<form action="login" name="frmLogin" method="post" class="loginForm">
+			<p class="login_id">아이디 <input type="text" name="user_id"></p>
+			<p class="login_pw">비밀번호 <input type="password" name="user_pw"></p>
+			<input type="submit" value="로그인" class="btnLogin">
+			<input class="btnGoJoin" type="button" value="회원가입" onclick="location.href='/DBTest-bookae/join.html'">
+		</form>
+		
+		<!--footer 시작-->
+        <footer id="footer">
+            <div id="footerInner">
+                <section class="guide">
+                    <h2 class="hidden">사이트 이용안내</h2>
+                    <ul>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </section>
+                <address>
+                    <span>㈜북애</span>
+                    <span>대표이사: 조수진</span>
+                    <span>서울특별시 종로구 미려빌딩6층</span>
+                    <span>전화: 02-666-1717</span>
+                    <span>E-MAIL: <a href="mailto:bookAe@bookAe.com">bookAe@bookAe.com</a></span>
+                </address>
+                <p class="copyright">Copyright since &copy; 2022 by BookAe CORPORATION ALL RIGHTS RESERVED.</p>
+                <p class="relCite">
+                    <select id='cite' name="relatedCite" onchange="citeIdong();">
+                        <option value="no">관련 사이트</option>
+                        <option value="kyobo">교보문고</option>
+                        <option value="yes24">yes24</option>
+                        <option value="aladin">알라딘</option>
+                    </select>
+                    <a class="btncite">이동</a>
+                </p>
+            </div>
+        </footer>
+        <!--footer 종료-->
+
+    </div>
+    <!--#wrapper 종료-->
+</body>
+</html>

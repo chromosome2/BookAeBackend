@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+
+.bookInfo {
+    position: relative;
+}
+
+/*backimage*/
+.backimage{
+    width: 1280px;
+    height: 1100px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom,rgb(0,0,0),#ccc);
+    position: relative;
+}
+.back-box{
+    width: 1280px;
+    margin: 0 auto;
+}
+.back-box > img{
+    margin: 0 auto;
+}
+.foot1{
+    position: absolute;
+    top: 900px;
+    float: left;
+    padding-left: 650px;
+    display: none;
+}
+.foot2{
+    position: absolute;
+    top:800px;
+    float: left;
+    padding-left: 550px;
+    display: none;
+}
+.foot3{
+    position: absolute;
+    top: 700px;
+    float: left;
+    padding-left: 650px;
+    display: none;
+}
+.foot4{
+    position: absolute;
+    top:600px;
+    float: left;
+    padding-left: 550px;
+    display: none;
+}
+.foot5{
+    position: absolute;
+    top: 500px;
+    float: left;
+    padding-left: 650px;
+    display: none;
+}
+.foot6{
+    position: absolute;
+    top:400px;
+    float: left;
+    padding-left: 550px;
+    display: none;
+}
+.foot7{
+    position: absolute;
+    top:300px;
+    float: left;
+    padding-left: 650px;
+    display: none;
+}
+
+/*cartoonbox*/
+.cartoon-back{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.cartoonBox {
+    width: 1200px;
+    height: 800px;
+    background-color: rgba(0,0,0,0.85);
+    opacity:0;
+}
+#no {
+    width: 60px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.cartoon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.cartoon > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.cartoon>img:first-child{
+    display: inline-block;
+}
+.cartoonBox > #prev, .cartoonBox > #next {
+    width: 100px;
+    height: 140px;
+    position: absolute;
+}
+.cartoonBox > #prev{
+    top: 340px;
+    left: 80px;
+}
+.cartoonBox > #next{
+    top: 340px;
+    right: 80px;
+    cursor: pointer;
+}
+
+/*책 정보*/
+.information{
+    width: 1200px;
+    height: 800px;
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    top: 150px;
+    display: none;
+    color: rgb(196, 196, 196);
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.information .booktitle{
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 20px 0;
+    margin-top: 80px;
+    float: right;
+    margin-right: 250px;
+    color: rgb(204, 101, 101);
+}
+.information > img {
+    width: 300px;
+    position: absolute;
+    top: 170.32px;
+    left: 100px;
+}
+.bookSul {
+    position: absolute;
+    top: 200px;
+    width: 900px;
+    font-size: 0.9em;
+    left: 350px;
+}
+.bookSul > p:first-child {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+.bookSul > p>span{
+    font-size: 1.5em;
+}
+.bookSul > #zul {
+    width: 700px;
+    margin: 50px auto;
+    color: rgb(150, 150, 150);
+    line-height: 30px;
+    text-align: center;
+}
+.cost1 {
+    position: absolute;
+    top: 620px;
+    left: 450px;
+}
+.cost>p{
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cost a{
+    color: rgb(161, 161, 161);
+}
+.cost .costInfo {
+    margin-left: 20px;
+    display: none;
+}
+.cost .title{
+    font-size: 0.8em;
+}
+.cost .title>th:first-child {
+    padding-right: 35px;
+}
+.cost .title>th:nth-child(2) {
+    padding-right: 35px;
+}
+.cost .title>th:nth-child(3) {
+    padding-right: 25px;
+}
+.cost1 tr>td:nth-child(3) {
+    padding-left: 25px;
+}
+.cost th{
+    color: rgb(218, 219, 170);
+}
+.cost tr > td:nth-child(4)>a {
+    color: rgb(223, 138, 117);
+}
+.cost2{
+    position: absolute;
+    top: 620px;
+    left: 850px;
+}

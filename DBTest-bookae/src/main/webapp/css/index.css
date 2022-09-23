@@ -1,0 +1,527 @@
+@charset "utf-8";
+/*본문*/
+
+/*이미지 배너*/
+.overflowImage {
+    overflow: hidden;
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+.imageBanner {
+    width: 8960px;
+    position: relative;
+}
+.imageBanner img{
+    float: left;
+    width: 1280px;
+    cursor: pointer;
+}
+#whasalL{
+    width: 5%;
+    float: left;
+    position: absolute;
+    left: 5%;
+    top: 38%;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.4;
+}
+#whasalR{
+    width: 5%;
+    float: right;
+    position: absolute;
+    right: 5%;
+    top: 38%;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.4;
+}
+/*베스트 셀러*/
+.bestSellerBanner {
+    height: 1100px;
+    margin-top: 120px;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+.bestSellerBanner section {
+    position: relative;
+}
+
+.bestSellerBanner .BS-title {
+    font-size: 2.5em;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bestSellerBanner h3 {
+    float: left;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 5px;
+}
+.bestSellerBanner #BSday > h3 {
+    margin-left: 355px;
+}
+.bestSellerBanner ul>li {
+    display: inline-block;
+}
+/*.bestSellerBanner h2 a {
+    display: inline-block;
+    color: rgb(145, 145, 145);
+}*/
+.bestSellerBanner ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    top: 50px;
+}
+.bestSellerBanner ul li a{
+    display: inline-block;
+    width: 300px;
+    height: 410px;
+    margin-top: 30px;
+    position: relative;
+}
+.bestSellerBanner .more {
+    position: absolute;
+    top: 950px;
+    right: 0;
+    padding: 8px;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+.bestSellerBanner .more::before {
+    content: "p";
+    font-family: webcafeIcon;
+    position: relative;
+    top: 3px;
+    color: rgb(42, 148, 42);
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+.bestSellerBanner img {
+    width: 200px;
+    height: 290px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+.bestSellerBanner .box {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 50px;
+    overflow: hidden;
+}
+.bestSellerBanner .plus {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+    top: -290px;
+    left: 200px;
+}
+.bestSellerBanner .plus >p {
+    color: rgb(226, 226, 226);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 56.68px;
+    margin-top: 120px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.bestSellerBanner .plus > div {
+    width: 140px;
+    height: 210px;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    border-left: 2px solid rgb(219, 219, 219);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.bestSellerBanner .plus > span {
+    color: rgb(219, 219, 219);
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 243.2px;
+    left: 160px;
+    position: absolute;
+}
+.bestSellerBanner .etc img {
+    width: 60%;
+    height: 60%;
+}
+.bestSellerBanner .etc .box{
+    width: 180px;
+    height: 246px;
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 60px;
+    overflow: hidden;
+}
+.bestSellerBanner .etc .plus {
+    width: 180px;
+    height: 246px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+    top: -246px;
+    left: 180px;
+}
+.bestSellerBanner .etc .plus >p {
+    color: rgb(226, 226, 226);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 51.68px;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.bestSellerBanner .etc .plus > div {
+    width: 120px;
+    height: 160px;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    border-left: 2px solid rgb(219, 219, 219);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.bestSellerBanner .etc .plus > span {
+    color: rgb(219, 219, 219);
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 194px;
+    left: 142px;
+    position: absolute;
+}
+.bestSellerBanner p {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.bestSellerBanner .bookName, .bestSellerBanner .bookAuthor{
+    width: 100%;
+    text-align: center;
+}
+.bestSellerBanner .bookName {
+    top: 350px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    display: block;
+}
+.bestSellerBanner .etc .bookName {
+    top: 310px;
+    font-size: 1em;
+    color: rgb(94, 94, 94);
+}
+.bestSellerBanner .bookAuthor {
+    top: 380px;
+    font-size: 0.9em;
+}
+.etc .bookAuthor{
+    top: 340px;
+}
+.bestSellerBanner p[class^='rank'] {
+    font-family: hancom;
+}
+.bestSellerBanner .rank {
+    font-size: 1.5em;
+    color: rgb(95, 95, 95);
+    font-weight: 800;
+    left: 20px;
+    top: 15px;
+}
+.bestSellerBanner .rank_1 {
+    color: rgb(255, 200, 19);
+    font-size: 2.7em;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+.bestSellerBanner .rank_2 {
+    color: rgb(170, 170, 170);
+    font-size: 2.7em;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+.bestSellerBanner .rank_3 {
+    color: rgb(192, 150, 36);
+    font-size: 2.7em;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+
+
+/*매거진*/
+#magazineBanner {
+    height: 800px;
+    position: relative;
+}
+#magazineBanner h2 {
+    text-align: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+#magazineBanner li{
+    float: left;
+    width: 320px;
+    height: 500px;
+    margin-top: 80px;
+}
+#magazineBanner img {
+    width: 250px;
+    height: 250px;
+}
+#magazineBanner ul div {
+    text-align: center;
+    width: 250px;
+    height: 520px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+    position: relative;
+    margin-left: 35px;
+}
+#magazineBanner li h3 {
+    font-size: 0.9em;
+    margin-top: 0;
+    height: 50px;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+#magazineBanner li span {
+    font-size: 0.7em;
+    letter-spacing: 0;
+    color: rgb(9, 148, 39);
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#magazineBanner ul .naeyoung {
+    text-align: left;
+    text-align: justify;
+    text-indent: 10px;
+    padding: 0 15px;
+    height: 120px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:4; /* 라인수 */
+    -webkit-box-orient:vertical;
+    word-wrap:break-word;
+    line-height:20px;
+    height:80px; /* height = line-height * 줄수 : 비wekkit 계열 */
+}
+#magazineBanner .plus{
+    font-family: webcafeIcon;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#magazineBanner li:hover h3{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#magazineBanner li:hover .plus{
+    color: rgb(85, 155, 85);
+}
+#magazineBanner .more {
+    position: absolute;
+    top: 720px;
+    right: 0;
+    padding: 8px;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+#magazineBanner .more::before {
+    content: "p";
+    font-family: webcafeIcon;
+    position: relative;
+    top: 3px;
+    color: rgb(42, 148, 42);
+    font-size: 0.9em;
+    margin-right: 3px;
+}
+
+
+/*북애의 선택, 셀럽의 선택*/
+#choice {
+    height: 1200px;
+    position: relative;
+    margin-top: 70px;
+}
+#choice h2{
+    cursor: pointer;
+}
+#choice section {
+    height: 550px;
+}
+#choice img {
+    width: 220px;
+}
+
+.bookaeChoice h2{
+    margin-left: 50px;
+    width: 350px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgb(136, 136, 136), rgb(136, 136, 136),rgb(136, 136, 136), #fff);
+    border-image-slice: 1;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.bookaeChoice img{
+    margin-left: 90px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+.bookaeChoice .naeyong {
+    border: 5px double rgb(92, 92, 92);
+    width: 520px;
+    height: 280px;
+    padding: 30px 20px 0 90px;
+    position: absolute;
+    top: 130px;
+    left: 220px;
+}
+.bookaeChoice .naeCenter {
+    text-align: center;
+    width: 470px;
+    height: 260px;
+    margin-left: 10px;
+}
+.bookaeChoice .naeyong h3 {
+    color: rgb(22, 121, 187);
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+.bookaeChoice .naeyong .author{
+    font-size: 0.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: hanganglongM;
+}
+.bookaeChoice .naeyong .quotes {
+    font-size: 1.5em;
+    font-family: garmae;
+    margin-bottom: 25px;
+    color: rgb(241, 135, 135);
+}
+.bookaeChoice .quotes > span {
+    font-size: 2em;
+    font-family: garmae;
+    position: relative;
+    top: 5px;
+}
+.bookaeChoice .naeyong .recommend {
+    line-height: 1.5em;
+    font-family: hanganglongM;
+    font-size: 1.1em;
+}
+.bookaeChoice .naeyong .more {
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+    color: rgb(8, 117, 35);
+    position: relative;
+    right: -20px;
+}
+
+.celebrityChoice {
+    text-align: right;
+    position: relative;
+}
+.celebrityChoice h2 {
+    width: 350px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, rgb(136, 136, 136), rgb(136, 136, 136),rgb(136, 136, 136), #fff);
+    border-image-slice: 1;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    float: right;
+    padding-right: 10px;
+}
+.celebrityChoice .celebrityRecommend {
+    clear: both;
+    font-size: 0.7em;
+    font-family: hangangM;
+    margin-right: 30px;
+}
+.celebrityChoice .celebrityRecommend > span{
+    font-size: 1.1em;
+    font-weight: 800;
+    margin-right: 3px;
+}
+.celebrityChoice img {
+    margin-right: 90px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    cursor: pointer;
+}
+.celebrityChoice .naeyong{
+    border: 5px double rgb(92,92,92);
+    width: 520px;
+    height: 280px;
+    padding: 20px 70px 10px 40px;
+    position: absolute;
+    top: 145px;
+    right: 220px;
+}
+.celebrityChoice .naeCenter {
+    text-align: center;
+    width: 520px;
+    height: 400px;
+}
+.celebrityChoice .naeyong h3 {
+    color: rgb(235, 119, 11);
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+.celebrityChoice .naeyong .author {
+    font-size: 0.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: hanganglongM;
+}
+.celebrityChoice .naeyong .quotes {
+    font-size: 1.4em;
+    font-family: fox;
+    font-weight: bold;
+    color: rgb(190, 64, 32);
+    margin-bottom: 25px;
+}
+.celebrityChoice .quotes >span {
+    font-size: 2em;
+    position: relative;
+    top: 10px;
+}
+.celebrityChoice .naeyong .recommend {
+    line-height: 1.6em;
+    font-family: hanganglongM;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.celebrityChoice .naeyong .more {
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    color: rgb(8, 117, 35);
+    position: relative;
+    left: 0;
+}

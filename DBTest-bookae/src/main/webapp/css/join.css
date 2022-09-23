@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*가입하기 시작*/
+.memberJoin {
+    position: relative;
+}
+.memberJoin >h2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+fieldset {
+    width: 550px;
+    height: 1000px;
+    margin: 0 auto;
+    border: none;
+}
+fieldset >p {
+    width: 550px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+p > input{
+    width: 550px;
+    height: 50px;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    outline: none;
+    padding-left: 10px;
+}
+.logInfo {
+    height: 2px;
+    font-size: 0.7em;
+    margin: 0 0 0 15px;
+    color: rgb(226, 42, 42);
+    font-weight: bold;
+    
+}
+#email {
+    width: 200px;
+}
+.emailArea a {
+    font-size: 1.5em;
+    color: rgb(104, 104, 104);
+    margin: 0 9px;
+}
+.emailArea #emailAdd{
+    width: 140px;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+.emailArea #emailAfter {
+    width: 130px;
+    height: 50px;
+    font-size: 1.1em;
+    float: right;
+}
+.emailArea #emailAfter option {
+    font-size: 1em;
+}
+.news{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(107, 107, 107);
+    position: relative;
+    width: 562px;
+}
+.news span {
+    margin-right: 40px;
+}
+.news label{
+    font-size: 0.9em;
+}
+.news .telNews{
+    margin-right: 20px;
+}
+.news input {
+    display: inline-block;
+    width: 17px;
+    position: relative;
+    top: 19px;
+    margin-right: 5px;
+    
+}
+.btnJoinArea {
+    text-align: center;
+}
+.btnJoin {
+    width: 500px;
+    height: 70px;
+    margin-top: 40px;
+    line-height: 70px;
+    background-image: linear-gradient(to right top, rgb(112, 112, 112),rgb(207, 207, 207));
+    border: none;
+    border-radius: 5px;
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.btnJoin >a {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/*가입하기 시작*/

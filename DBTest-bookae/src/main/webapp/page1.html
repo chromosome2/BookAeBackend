@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/그림2.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/page1.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/page1.js"></script>
+    <title>북애 | 환상의 여인</title>
+</head>
+<body>
+    <!--건너뛰기 링크 시작-->
+    <a id="skipNav" href="mainContents">본문 바로가기</a>
+    <!--건너뛰기 링크 종료-->
+
+    <!--#wrapper 시작-->
+    <div id="wrapper">
+        <!--헤더 시작-->
+        <header>
+            <div class="head">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="BookAe">
+                    </a>
+                </h1>
+                <ul class="infoLink">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+                <div class="test">
+                    <div class="search">
+                        <h2 class="hidden">도서 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <input type="text" id="bookSearch" name="bookSearch" placeholder="도서 검색" required>
+                            <button type="submit">검색</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <h2 class="hidden">메인 메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">베스트 셀러</a>
+                        <ul class="bestSeller">
+                            <li><a href="#">전체 베스트셀러</a></li>
+                            <li><a href="#">교보 베스트셀러</a></li>
+                            <li><a href="#">Yes24 베스트셀러</a></li>
+                            <li><a href="#">알라딘 베스트셀러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">소식 구경</a>
+                        <ul class="infomation">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">매거진</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">북애의 서재</a>
+                        <ul class="recommend">
+                            <li><a href="#">북애 추천</a></li>
+                            <li><a href="#">셀럽 추천</a></li>
+                            <li class="white">.</li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="community">
+                            <li><a href="community.html">감상평</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">추천게시판</a></li>
+                            <li class="white">.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--헤더 종료-->
+        <section class="bookInfo">
+            <h2 class="hidden">환상의 여인 소개페이지</h2>
+            <div class="backimage">
+                <div class="back-box">
+                    <img src="images/light.png" alt="가로등 불빛" width="1200">
+                    <p class="foot1">
+                        <img src="images/Rfoot.png" alt="오른쪽 발자국">
+                    </p>
+                    <p class="foot2">
+                        <img src="images/Lfoot.png" alt="왼쪽 발자국">
+                    </p>
+                    <p class="foot3">
+                        <img src="images/Rfoot.png" alt="오른쪽 발자국">
+                    </p>
+                    <p class="foot4">
+                        <img src="images/Lfoot.png" alt="왼쪽 발자국">
+                    </p>
+                    <p class="foot5">
+                        <img src="images/Rfoot.png" alt="오른쪽 발자국">
+                    </p>
+                    <p class="foot6">
+                        <img src="images/Lfoot.png" alt="왼쪽 발자국">
+                    </p>
+                    <p class="foot7">
+                        <img src="images/Rfoot.png" alt="오른쪽 발자국">
+                    </p>
+                </div>
+            </div>
+
+            <div class="cartoon-back">
+                <div class="cartoonBox">
+                    <img id="no" src="images/X.png" alt="책카툰 끄기" >
+                    <div class="cartoon">
+                        <img src="images/000.jpg" alt="환상의 여인 책카툰" width="450" height="578">
+                    </div>
+                    <img id="prev" src="images/whasalL2.png" alt="책카툰 이전페이지">
+                    <img id="next" src="images/whasal2.png" alt="책카툰 다음페이지">
+                </div>
+            </div>
+
+            <div class="information">
+                <h3 class="booktitle">《환상의 여인》</h3>
+                <img src="images/phantomLady.jpg" alt="환상의 여인 책 이미지">
+                <div class="bookSul">
+                    <p><span>“</span>밤은 젊고 그 역시 젊었다.<br>하지만 상쾌한 밤과는 달리 그의 기분은 씁쓸했다.<span>”</span></p>
+                    <p id="zul">아내와 싸우고 무작정 거리로 뛰쳐나온 스콧 헨더슨은<br>
+                        술집에서 한 여자를 만나 즉석 데이트를 즐기고 돌아오는데,<br>
+                        아내는 살해당한 시체가 되어 있고, 그는 이 사건의 유일한 용의자로 전락한다.<br>
+                        그는 알리바이를 입증하기 위해 데이트한 식당과 가게들을 전전하지만<br>
+                        증인들 중 어느 누구도 그 여자를 기억하지 못한다.<br>
+                        사형 선고를 받은 그를 대신해서 그 환상의 여인을 찾으러 나선 사람은<br>
+                        스콧의 여자 친구인 캐럴 리치먼과 그의 친구 존 롬바드다.</p>
+                </div>
+                
+                <div class="cost cost1">
+                    <p class="costTitle">※일반 도서 가격 비교 보기</p>
+                    <table class="costInfo">
+                        <tr class="title">
+                            <th>판매처</th><th>판매가</th><th>배송비</th><th>사러가기</th>
+                        </tr>
+                        <tr>
+                            <td>교보문고</td><td>11,520원</td><td>0원</td><td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788954618526&orderClick=LEa&Kc=">사러가기</a></td>
+                        </tr>
+                        <tr>
+                            <td>yes24</td><td>11,520원</td><td>0원</td><td><a href="http://www.yes24.com/Product/Goods/7293062">사러가기</a></td>
+                        </tr>
+                        <tr>
+                            <td>알라딘</td><td>11,520원</td><td>0원</td><td><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=18091161&start=slayer">사러가기</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="cost cost2">
+                    <p class="costTitle">※중고 도서 가격 비교 보기</p>
+                    <table class="costInfo">
+                        <tr class="title">
+                            <th>판매처</th><th>판매가</th><th>배송비</th><th>사러가기</th>
+                        </tr>
+                        <tr>
+                            <td>교보문고</td><td>5,000원</td><td>3,000원</td><td><a href="http://used.kyobobook.co.kr/product/productSearchList.ink?type=isbn&typeValue=9788954618526&OV_REFFER=https://click.linkprice.com/">사러가기</a></td>
+                        </tr>
+                        <tr>
+                            <td>yes24</td><td>4,500원</td><td>3,000원</td><td><a href="http://www.yes24.com/Product/UsedShopHub/Hub/7293062">사러가기</a></td>
+                        </tr>
+                        <tr>
+                            <td>알라딘</td><td>3,900원</td><td>3,000원</td><td><a href="https://www.aladin.co.kr/shop/UsedShop/wuseditemall.aspx?ItemId=18091161&TabType=1&partner=bookprice">사러가기</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!--footer 시작-->
+        <footer id="footer">
+            <div id="footerInner">
+                <section class="guide">
+                    <h2 class="hidden">사이트 이용안내</h2>
+                    <ul>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </section>
+                <address>
+                    <span>㈜북애</span>
+                    <span>대표이사: 조수진</span>
+                    <span>서울특별시 종로구 미려빌딩6층</span>
+                    <span>전화: 02-666-1717</span>
+                    <span>E-MAIL: <a href="mailto:bookAe@bookAe.com">bookAe@bookAe.com</a></span>
+                </address>
+                <p class="copyright">Copyright since &copy; 2022 by BookAe CORPORATION ALL RIGHTS RESERVED.</p>
+                <p class="relCite">
+                    <select id='cite' name="relatedCite" onchange="citeIdong();">
+                        <option value="no">관련 사이트</option>
+                        <option value="kyobo">교보문고</option>
+                        <option value="yes24">yes24</option>
+                        <option value="aladin">알라딘</option>
+                    </select>
+                    <a class="btncite">이동</a>
+                </p>
+            </div>
+        </footer>
+        <!--footer 종료-->
+    </div>
+    <!--#wrapper 종료-->
+</body>
+</html>

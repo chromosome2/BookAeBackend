@@ -1,0 +1,151 @@
+/*감상평 게시판 시작*/
+.communityMenu{
+    width: 1280px;
+    height: 1200px;
+    margin: 0 auto;
+}
+.communityMenu h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: rgb(58, 58, 58);
+    margin-top: 150px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+}
+.communityMenu h2 > img{
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+
+.communityMenu #searchBook {
+    width: 400px;
+    float: right;
+    margin-bottom: 50px;
+    position: relative;
+    right: -60px;
+}
+#searchBook select{
+    width: 80px;
+    font-size: 0.9em;
+    padding: 2px 3px;
+    border: none;
+    border-bottom: 2px solid rgb(129, 129, 129);
+    outline: none;
+}
+#searchBook #Search_community{
+    width: 150px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 2px 3px;
+    border: none;
+    border-bottom: 2px solid rgb(129, 129, 129);
+}
+#searchBook button {
+    background-color: #fff;
+    text-shadow: 1px 1px 0.5px rgba(0,0,0,0.2);
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 3px;
+    padding: 3px 8px;
+}
+.communityMenu table {
+    clear: both;
+    margin: 0 auto;
+}
+.tableCommu #title {
+    border-bottom: 2px solid rgb(90, 90, 90);
+}
+.tableCommu th{
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+.tableCommu th:nth-child(1){
+    width: 50px;
+}
+.tableCommu th:nth-child(2){
+    width: 800px;
+}
+.tableCommu th:nth-child(3){
+    width: 150px;
+}
+.tableCommu th:nth-child(4){
+    width: 150px;
+}
+.tableCommu tr:nth-child(2) td{
+    padding-top: 20px;
+}
+.tableCommu td {
+    padding: 15px 5px;
+    font-size: 0.9em;
+}
+.tableCommu .best {
+    color: rgb(245, 27, 27);
+    font-weight: bold;
+}
+.tableCommu td .genre {
+    color: rgb(19, 145, 25);
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.tableCommu tr:nth-child(2) td,.tableCommu tr:nth-child(3) td{
+    background-color: rgb(253, 241, 236);
+}
+.tableCommu tr td:nth-child(3){
+    text-align: center;
+}
+.tableCommu tr td:nth-child(2):hover{
+    font-weight: bold;
+}
+.tableCommu tr:last-child {
+    border-bottom: 2px solid rgb(201, 201, 201);
+}
+.tableCommu .recommend{
+    display: inline-block;
+    width: 23px;
+    text-indent: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.tableCommu .recommend::before{
+    position: relative;
+    left: -23px;
+    top: 5px;
+    content: "♡";
+    color: rgb(255, 124, 124);
+}
+#writeCom {
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 80px;
+    position: relative;
+    top: 40px;
+}
+#writeCom:hover {
+    border-bottom: 2px solid rgb(128, 128, 128);
+}
+.page{
+    float: right;
+    font-size: 1.2em;
+    position: relative;
+    top: 40px;
+    color: rgb(58, 58, 58);
+    right: 50px;
+}
+.page a:first-child {
+    color: #ccc;
+}
+.page a:nth-child(2){
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.page a:hover{
+    font-weight: bold;
+}
+.page a:first-child:hover{
+    font-weight: 400;
+}
+/*감상평 게시판 종료*/
